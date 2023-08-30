@@ -1,0 +1,388 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+section{
+    height: 100vh;
+    width: 100%;
+}
+header{
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo{
+    position: absolute;
+    left: 90px;
+    top: 70px;
+}
+.logo a{
+    text-decoration: none;
+    color: black;
+    font-size: 40px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    text-shadow: 2px 3px 5px;
+}
+
+.searchbox{
+    background-color: #fff;
+    position: fixed;
+    right: 90px;
+    top: 70px;
+    height: 50px;
+    width: 170px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    z-index: 1;
+}
+
+.searchbox input{
+    width: 90px;
+    height: 20px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    color: #1f1f1f;
+    font-size: 14px;
+    padding: 0px 10px;
+}
+
+.searchbox input ::placeholder{
+    color: #1d1d1d;
+    font-family: poppins;
+    font-size: 0.8rem;
+    font-weight: 400px;
+    letter-spacing: 2px;
+}
+
+.sec1{
+    width: 100%;
+    position: relative;
+    display: flex;
+    margin: auto;
+   top: 30%;
+   
+   border-top: 1px solid #ccc;
+   
+
+    
+}
+
+.icons{
+    position: fixed;
+    top: 50%;
+    left: 0;
+    margin-left: 20px;
+    padding: 5px 0px;
+    border-radius: 20px;
+    box-shadow: 1px 1px 30px rgba(0, 0, 0, 0.2);
+    background-color: #fff;
+    border: none;
+    outline: none;
+    
+    
+}
+.icons a{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 10px;
+    text-decoration: none;
+    color: rgba(39, 39, 39, 0.80);
+
+}
+
+.icons a:hover .fa-facebook{
+    color:#0165E1 ;
+}
+.icons a:hover .fa-twitter{
+    color:#1DA1F2 ;
+}
+.icons a:hover .fa-instagram{
+    color:#C13584 ;
+}
+.icons a:hover .fa-youtube{
+    color:red ;
+}
+
+.img1{
+    height: 300px;
+    width: 450px;
+    margin-left: 10%;
+    margin-top: 3%;
+    border: 1px solid #ccc;
+    border-radius: 30px;
+    overflow: hidden;
+}
+.img1 img{
+    height: 300px;
+   
+
+}
+
+.sum{
+    position: absolute;
+    top: 80px;
+    right: 10%;
+    line-height: 60px;
+    
+}
+.sum h1{
+    text-transform: uppercase;
+    letter-spacing: 28px;
+    font-size: 60px;
+    font-family: roboto;
+
+}
+.sum h3{
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    font-size: 50px;
+    font-family: roboto;
+    
+}
+.color{
+   color:  #7a72ff;
+}
+.btn1{
+    width: 150px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #2f2e41;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 10%/50%;
+    margin-top: 20px;
+    border: transparent;
+    outline: none;
+    cursor: pointer;
+}
+.btn1:hover{
+    background-color:#7a72ff ;
+    transition: all ease 0.5s;
+}
+
+.sec2{
+    width: 85%;
+    height: 550px;
+    position: relative;
+    top: 40%;
+    left: 10%;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.text1{
+    position: absolute;
+    top: 0;
+    font-size: 40px;
+    font-family: 'Lora', serif;
+    font-weight: bold;
+    letter-spacing: 5px;
+    margin-top: 20px;
+
+}
+
+.text1 span{
+    color:#7a72ff ;
+    font-size: 40px;
+    font-family: 'Lora', serif;
+    font-weight: bold;
+
+}
+   
+.productimg {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 15%;
+
+}
+.productimg div{
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+.productimg div img{
+    height: 300px;
+    
+
+}
+.productimg div p{
+    color: #4d4d4d70;
+    font-size: 15px;
+    padding: 10px;
+}
+.productimg div a{
+    text-decoration: none;
+
+}
+.buybtn{
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background:linear-gradient(120deg, #6b60ec 20%, #a166f4);
+    padding: 8px 18px;
+    border-radius: 10%/50%;
+    margin-top: 10px;
+    color: #fff;
+    font-size: 14px;
+    letter-spacing: 1px;
+    display: none;
+    
+
+}
+.productimg div:hover .buybtn{
+    display: flex ;
+    
+}
+
+.sec3{
+    width: 85%;
+    height: 550px;
+    margin-top: 40px;
+    position: relative;
+    top: 40%;
+    left: 10%;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.femaleproducts{
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 15%;
+}
+
+.femaleproducts div{
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.femaleproducts div img{
+    height: 300px;
+    width: 300px;
+}
+
+.femaleproducts div p{
+    color: #4d4d4d70;
+    font-size: 15px;
+    padding: 10px;
+}
+.femaleproducts div a{
+    text-decoration: none;
+
+}
+.buybtn1{
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background:linear-gradient(120deg, #6b60ec 20%, #a166f4);
+    padding: 8px 18px;
+    border-radius: 10%/50%;
+    margin-top: 10px;
+    color: #fff;
+    font-size: 14px;
+    letter-spacing: 1px;
+    display: none;
+    
+
+}
+.femaleproducts div:hover .buybtn1{
+    display: flex ;
+    
+}
+
+/*mobile ------------ vew */
+
+@media (max-width:600px){
+    .logo a{
+        font-size: 24px;
+    }
+    .searchbox{
+        position: fixed;
+        right: 59px;
+    }
+    .searchbox input{
+        height: 100%;
+        width: 80%;
+    }
+    .icons{
+        margin-left: 6px;
+    }
+    .sec1{
+        flex-direction: column;
+        top: 15%;
+    }
+    .sum{
+        top: 360px;
+        right: -31%;
+    }
+    .img1{
+        margin-left:25%;
+    }
+    .productimg{
+        flex-direction: column;
+        top: 8%;
+    }
+    .sec2{
+        height: 170vh;
+        width: 150%;
+    }
+    .femaleproducts{
+        flex-direction: column;
+        top: 8%;
+    }
+    .sec3{
+        width: 140%;
+        height: 170vh;
+        margin-top: 15px;
+        
+    }
+
+    
+}
