@@ -339,7 +339,7 @@ header{
 
 /*mobile ------------ vew */
 
-@media (max-width:600px){
+@media (max-width:768px){
     .logo a{
         font-size: 24px;
     }
@@ -371,7 +371,7 @@ header{
     }
     .sec2{
         height: 170vh;
-        width: 150%;
+        width: 140%;
     }
     .femaleproducts{
         flex-direction: column;
